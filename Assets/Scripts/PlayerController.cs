@@ -44,4 +44,14 @@ public class PlayerController : MonoBehaviour {
             winText.text = "You Win!";
         }
     }
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+    #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;   // UnityEditorの実行を停止する処理
+    #else
+            Application.Quit();                                // ゲームを終了する処理
+    #endif
+        }
+    }
 }
