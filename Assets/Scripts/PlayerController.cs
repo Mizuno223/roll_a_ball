@@ -5,8 +5,10 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour {
     public float speed;
+    public float time;
     public Text countText;
     public Text winText;
+    public Text timeText;
     private Rigidbody rb;
     private int count;
     void Start ()
@@ -15,6 +17,14 @@ public class PlayerController : MonoBehaviour {
         count = 0;
         SetCountText ();
         winText.text = "";
+    }
+    void Update()
+    {
+        if (count < 12)
+        {
+            time += Time.deltaTime;
+            timeText.text = "Time : " + time.ToString("F2"); 
+        }
     }
     void FixedUpdate ()
     {
