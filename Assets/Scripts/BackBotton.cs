@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class StartBotton : MonoBehaviour
+public class BackBotton : MonoBehaviour
 {
-    public void OnClickStartBotton ()
+    public void OnClickBackBotton ()
     {
-        SceneManager.LoadScene("MiniGame");
+        SceneManager.LoadScene("StartScene");
     }
     void Update()
     {
