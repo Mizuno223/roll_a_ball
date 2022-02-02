@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/StartScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
+    path: Assets/Scenes/StageSelect.unity
+    guid: ac432e59b06e60f4c94d06189338063a
+  - enabled: 1
     path: Assets/Scenes/MiniGame.unity
     guid: 9745558c2404b4e479f9490f1b3a6aa0
   m_configObjects: {}
