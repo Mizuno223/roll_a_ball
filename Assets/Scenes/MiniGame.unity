@@ -154,7 +154,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 88278262}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: dd4ff648677dc9947a90eb7c7b2c1c31, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
@@ -697,7 +697,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 627553223}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: dd4ff648677dc9947a90eb7c7b2c1c31, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -1293,8 +1293,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 70, y: -5}
-  m_SizeDelta: {x: 170, y: 30}
+  m_AnchoredPosition: {x: 95, y: -5}
+  m_SizeDelta: {x: 200, y: 30}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1014322587
 MonoBehaviour:
