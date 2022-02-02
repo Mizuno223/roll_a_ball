@@ -783,6 +783,7 @@ MonoBehaviour:
   countText: {fileID: 1222800023}
   winText: {fileID: 1681971622}
   TimeText: {fileID: 1014322587}
+  pickUp: 12
 --- !u!54 &627553229
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour {
     public Text TimeText;
     private Rigidbody rb;
     private int count;
+    public int pickUp;
     void Start ()
     {
         rb = GetComponent<Rigidbody>();
@@ -20,7 +21,7 @@ public class PlayerController : MonoBehaviour {
     }
     void Update()
     {
-        if (count < 12)
+        if (count < pickUp)
         {
             time += Time.deltaTime;
             TimeText.text = "Time : " + time.ToString("F2");
@@ -33,7 +34,7 @@ public class PlayerController : MonoBehaviour {
 
         Vector3 movement = new Vector3 (moveHorizontal, 0.0f, moveVertical);
 
-        if (count >= 12)
+        if (count >= pickUp)
         {
             movement = new Vector3 (0.0f, 0.0f, 0.0f);
         }
@@ -54,7 +55,7 @@ public class PlayerController : MonoBehaviour {
     void SetCountText ()
     {
         countText.text = "Count : " + count.ToString();
-        if (count >= 12)
+        if (count >= pickUp)
         {
             winText.text = "You Win!";
         }
