@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class BackBotton : MonoBehaviour
+public class StartButton : MonoBehaviour
 {
-    public void OnClickBackBotton ()
+    public void OnClickStartButton ()
     {
-        SceneManager.LoadScene("StartScene");
+        SceneManager.LoadScene("StageSelect");
     }
     void Update()
     {
